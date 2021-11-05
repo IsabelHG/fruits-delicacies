@@ -1,0 +1,256 @@
+/* BODY */
+body {
+    background-image: url('../img/fondo.jpg');
+    background-size: 100%;
+    background-repeat:repeat-y;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* HEADER */
+
+.header {
+    position: absolute;
+    position: fixed;
+    background-color: #073806;
+    width: 100%;
+    z-index: 999;
+}
+
+.opciones a {
+    padding: 10px;
+    text-align: center;
+    margin: 16px 0;
+    text-decoration: none;
+    color: #f7f2df;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.opciones a:hover{
+    color: #ffaf34;
+}
+
+/* PRINCIPAL */
+
+.principal {
+    background-color: #ffaf34;
+    width: 100%;
+    padding-top: 100px;
+    padding-bottom: 35px;
+}
+
+.logo-solo {
+    width: 85%;
+    height: auto;
+    padding: 0 30px;
+}
+
+.logo-letra {
+    width: 100%;
+    height: auto;
+    padding: 0 10px;
+}
+
+@media (max-width:767px) {
+    .voltea{
+        flex-direction: column-reverse!important;
+    }
+    .logo-1{     
+        flex: 0 0 auto !important;
+        width: 91.6666666667% !important;
+    }
+    .logo-2{
+        width: 100% !important;
+    }
+    .logo-solo {
+        width: 100%;
+        height: auto;
+        padding: 0 30px;
+    }
+    .logo-letra {
+        width: 100%;
+        height: auto;
+        padding: 0 10px;
+    }
+}
+
+/* QUIENES SOMOS */
+
+.descripcion {
+    text-align: center;
+}
+
+.descripcion p{
+    color: #073806;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 50px;
+}
+
+.title {
+    font-size: 35px;
+    padding-top: 90px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.separador {
+    height: auto;
+    background-color: #073806;
+    color: #f7f2df;
+    text-align: center;
+}
+
+.separador p{
+    margin-top: 0;
+    margin-bottom: 50px;
+}
+
+.redes {
+    display: flex;
+    margin: 0 25%;
+}
+
+.redes a{
+    margin: 0 50px;
+    margin-bottom: 50px;
+    color: #f7f2df;
+    width: 33.33333333%;;
+}
+
+.redes a:hover{
+    color: #ffaf34;
+}
+
+@media (max-width:767px) {
+    .redes{
+        margin: 0 0;
+    }
+    .redes a{
+        margin: 0 0;
+        margin-bottom: 50px;
+        color: #f7f2df;
+        width: 33.33333333%;;
+    }
+}
+
+/* PRODUCTOS */
+
+.img-productos{
+    width: 100%;
+    height: 400px;
+    margin: 20px;
+}
+
+.content-img1,.content-img2,.content-img3,.content-img4,.content-img5,.content-img6,.content-img7,.content-img8,.content-img9{
+    position: relative;
+}
+
+.precio{
+    position: absolute;
+    width: 100%;
+    height: 400px;
+    background-color: #073806;
+    opacity: 75%;
+    color: #f7f2df;
+    top: 0;
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    visibility: hidden;
+}
+
+.precio p{
+    width: 100%;
+    font-size: 20px;
+}
+
+.content-img:hover .precio,.content-img1:hover .precio,.content-img2:hover .precio,.content-img3:hover .precio,.content-img4:hover .precio,.content-img5:hover .precio,.content-img6:hover .precio,.content-img7:hover .precio,.content-img8:hover .precio,.content-img9:hover .precio{
+    visibility: visible;
+}
+
+@media (max-width:767px) {
+    .aumentar{
+        width: 90% !important;
+    }
+}
+
+.separador-2 {
+    height: auto;
+    background-color: #ffaf34;
+    color: #073806;
+    text-align: center;
+    display: none;
+}
+
+.separador-2 svg{
+    color: #073806;
+}
+
+.tips {
+    display: flex;
+    margin: 0 15%;
+}
+
+.tips p{
+    margin: 0 50px;
+    margin-bottom: 50px;
+    color: #073806;
+    width: 33.33333333%;;
+    margin-top: 25px;
+    font-size: 20px;
+}
+
+.tips svg{
+    margin: 0 50px;
+    margin-top: 50px;
+    color: #073806;
+    width: 33.33333333%;;
+}
+
+@media (min-width:768px) {
+    .separador-2{
+        display: block;
+    }
+}
+
+.separador-3{
+    height: auto;
+    background-color: #ffaf34;
+    color: #073806;
+    text-align: center;
+    display: none;
+}
+
+.tips-2 {
+    display: flex;
+}
+
+.tips-2 p{
+    margin: 25px;
+    color: #073806;
+    width: 75%;
+    font-size: 20px;
+}
+
+.tips-2 svg{
+    margin: 25px;
+    color: #073806;
+    width: 25%;;
+}
+
+@media (max-width:767px) {
+    .separador-3{
+        display: block;
+    }
+}
+
+/* FOOTER */
+
+.footer {
+    background-color: #073806;
+    height: 50px;
+}
